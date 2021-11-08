@@ -1,14 +1,18 @@
 <template>
+  <div class="nav-ewc-arrow" />
   <header class="header">
     <div class="header-container">
       <TopNav />
+      <BottomNav />
     </div>
   </header>
+  <AccountList />
 </template>
 
 <script>
-// import Navbar from "./Navbar.vue";
 import TopNav from "./TopNav.vue";
+import BottomNav from "./BottomNav.vue";
+import AccountList from "./AccountList.vue";
 export default {
   name: "Header",
   data() {
@@ -17,8 +21,9 @@ export default {
     };
   },
   components: {
-    // Navbar,
     TopNav,
+    BottomNav,
+    AccountList,
   },
 };
 </script>
