@@ -30,8 +30,8 @@
         <span v-if="countCart">{{ countCart }}</span>
         <p>Basket</p>
       </div>
-      <div class="content-user">
-        <div class="user-avatar">
+      <div class="content-user" id="user-avatar">
+        <div class="user-avatar" @click="$emit('toggle-click-list')">
           <img
             src="../../assets/image/avatar/avataaars.svg"
             alt="user-avatar"
@@ -51,6 +51,8 @@ export default {
   components: {
     icon: FontAwesomeIcon,
   },
+  emits: ["toggle-click-list"],
+
   data() {
     return {
       countHeart: 0,

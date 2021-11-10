@@ -30,4 +30,13 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
 </style>
