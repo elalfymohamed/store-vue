@@ -4,12 +4,13 @@
       <diV class="content-btn">
         <button class="btn menu-btn" type="buttom" data-target="menu">
           <icon icon="bars" />
+          <span>All</span>
         </button>
       </diV>
       <div class="content-menu__link">
         <ul>
           <li v-for="link in menuLink" :key="link">
-            <router-link :to="link.path">
+            <router-link :to="link.path" tabindex="0">
               <span>{{ link.name }}</span>
             </router-link>
           </li>
@@ -68,6 +69,11 @@ export default {
         background-color: transparent;
         border: none;
         cursor: pointer;
+
+        span {
+          font-size: 1rem;
+          margin-left: 0.2rem;
+        }
       }
       .menu-btn {
         color: #fff;
@@ -97,7 +103,6 @@ export default {
           font-size: 15px;
           font-weight: 500;
           display: block;
-
           &:hover {
             text-decoration: underline;
           }

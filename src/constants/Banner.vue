@@ -1,5 +1,10 @@
 <template>
-  <div class="banner">
+  <section class="section-banner">
+    <div class="banner-center">
+      <router-link to="/">
+        <img src="@/assets/image/banner/banner6.jpg" alt="bannre" />
+      </router-link>
+    </div>
     <div class="banner-content">
       <div class="banner-content_carousel">
         <div class="carousel carousel-slider" style="width: 100%">
@@ -26,7 +31,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -47,6 +52,9 @@ export default {
       },
       {
         image: "banner4.jpg",
+      },
+      {
+        image: "banner5.jpg",
       },
       {
         image: "banner1.jpg",
@@ -90,8 +98,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.banner {
+.section-banner {
   position: relative;
+
+  .banner-center {
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
   .banner-content {
     outline: none;
