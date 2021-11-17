@@ -2,7 +2,7 @@
   <section class="section-product-feed">
     <div class="container">
       <div v-if="loading" class="loading">
-        <h4 style="fontsize: 1.2rem; color: #000">loading...</h4>
+        <h4 style="font-size: 1.2rem; color: #000">loading...</h4>
       </div>
       <div v-if="error" class="error">
         <h4 syle="color:#ff0000">{{ error }}.</h4>
@@ -54,5 +54,17 @@ export default {
   text-align: center;
   padding: 1rem;
   margin: 1rem 0;
+}
+/* ====== */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.product {
+  margin: 1rem 10px;
 }
 </style>

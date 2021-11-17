@@ -184,9 +184,9 @@ export default {
       font-size: 0.8rem;
       font-weight: 500;
       color: #333;
-      padding: 0.5rem 0;
+      margin: 0.8rem 0;
       text-decoration: none;
-      margin: 0;
+      padding: 0;
       font-family: inherit;
 
       .nav-text {

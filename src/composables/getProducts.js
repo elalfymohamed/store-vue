@@ -15,7 +15,8 @@ const getProducts = () => {
       // api from vue.config.js
       .get(`api/products`)
       .then((res) => {
-        products.value = res.data;
+        products.value = res.data.slice(0, 20);
+        console.log(products.value);
       })
       .catch((err) => {
         error.value = err.message;
